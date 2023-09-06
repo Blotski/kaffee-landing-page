@@ -294,65 +294,51 @@ section{
 }
 
 
-
-
-/* contact-section information */
-
-/* section{
-  padding: 0 19%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  background-color: #f0f0f0;
-  scroll-snap-align: start;
-  scroll-behavior: smooth;
-} */
-
-/* .hero{
-  height: 100%;
-  width: 100%;
-  min-height: 100vh;
-  background: linear-gradient(245.59deg, #6F4E37 0%, #6F4E37 28.53%, #531616 75.52%);
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  gap: 2rem;
-} */
-
-
 #section4 {
+  margin-top: auto;
   display: grid; 
-  
+  background: linear-gradient(245.59deg, #0c380f 0%, #1a592b 28.53%, #099b54 75.52%);
+  /* height: auto; */
+  /* grid-template-rows: 1fr 1fr 10fr; */
+  /* grid-auto-rows: min-content; */
+    /* grid-auto-rows: minmax(30px, auto); */
+  /* grid-auto-rows: 50px; */
 }
 
 .contact-boxes {
-  /* display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; */
   /* grid-template-rows: 1rf 1fr; */
   display: flex;
+  flex-wrap: wrap;
   /* justify-content: space-between; */
+  justify-content: space-around;
+  /* align-items: center; */
+  /* flex-direction: row; */
 }
 
 #contact-us {
+  /* display: block; */
+  vertical-align: text-bottom;
   text-align: center;
   font-family: 'Permanent Marker', cursive;
   color: white;
+  /* margin-block-start: 0; */
+  /* margin-block-end: 0; */
 }
 
 .picture > img {
+  aspect-ratio : 1 / 1;
   width: 100%;
-  /* height: auto; */
+  height: 100%;
+  border-radius: 50%
 }
 
 .contact-box {
-  /* display: flex; */
   border: solid 1px black;
   border-radius: 10px;
   text-align: center;
   background: linear-gradient(245.59deg, #6F4E37 0%, #6F4E37 28.53%, #531616 75.52%);
+  width: 200px;
+  margin: 30px;
 }
 
 .contact-box > p {
