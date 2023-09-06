@@ -325,12 +325,26 @@ section{
 
 #section4 {
   display: grid; 
+  
+}
+
+.contact-boxes {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; */
+  /* grid-template-rows: 1rf 1fr; */
+  display: flex;
+  /* justify-content: space-between; */
 }
 
 #contact-us {
   text-align: center;
   font-family: 'Permanent Marker', cursive;
   color: white;
+}
+
+.picture > img {
+  width: 100%;
+  /* height: auto; */
 }
 
 .contact-box {
@@ -347,14 +361,15 @@ section{
 }
 
 div .img-links {
-  /* display: flex; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .gitHub-link, .linkedIn-link {
-  display: inline;
+  /* display: inline; */
   /* margin: 0 20px 0 20px; */
   /* justify-self: center; */
-  /* justify-content: space-between; */
+  
 
 }
 
