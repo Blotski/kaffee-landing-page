@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaffee</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+
+<!-- and it's easy to individually load additional languages -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>
+
+<script>hljs.highlightAll();</script>
+</head>
+
+<body>
+  <header>
+    <a href="#" class="logo">KAFFEE</a>
+    <ul class="navlist">
+      <li><a href="#">Contact</a></li>
+      <li>
+        <a target="_blank" href="https://github.com/oslabs-beta/Kaffee">
+          <img id="navlist-github" src="img/github-mark-white.png" alt="">
+        </a>
+      </li>
+    </ul>
+    <div class="bx bx-menu" id="menu-icon"></div>
+  </header>
+
+  <section class="hero" id="section1">
+    <div class="hero-text">
+      <h4>Kaffee</h4>
+      <h1>JMX Client for Kafka</h1>
+      <p>Easily monitor and record Kafka cluster metrics through the power of Java Management Extensions</p>
+      <a id='docker-button' href="#">Docker</a>
+      <a id='demo-button' href="#" class="ctaa"><i class="ri-play-fill"></i>See Demo</a>
+
+    </div>
+    <div class="hero-img">
+      <img class='kaffee-logo' src="img/LogoNoText.png" alt="">
+    </div>
+
+  </section>
+
+  <section class="hero" id="section2">
+    <div class="hero-text">
+      <h4>Install</h4>
+      <h3>Simply copy and paste this code into the services dictionary in your compose.yml file.</h3>
+      <a id='demo-button2' href="#" class="ctaa demo-button"><i class="ri-play-fill"></i>See Demo</a>
+
+    </div>
+    <div class="hero-img">
+      <pre>
+        <code class="language-yml">Kaffee:
+          image: teamkaffee/kaffee
+          ports:
+            - '8080:8080'
+            - '3030:3030'
+          depends_on:
+            - kafka</code>
+            <p>Make sure your Kafka clusters are <br>configured to allow JMX connnections.</p>
+</pre>
+    </div>
+
+  </section>
+
+  <section class="hero" id="section3">
+    <div class="hero-img">
+      <iframe src="https://giphy.com/embed/3o6gE51uXycrKW6D84" width="420" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/jonny-magic-hot-dog-3o6gE51uXycrKW6D84"></a></p>
+    </div>
+    <div class="hero-text">
+      <h1>Kaffee In Action</h1>
+      <p>Easily monitor and record Kafka cluster metrics through the power of Java Management Extensions</p>
+      <a id='team-button' href="#">See the team</a>
+    </div>
+
+
+  </section>
+
+  
+  <!-- Contact Section -->
+  <section  id="section4">
+    <h4 id="contact-us">Contact Us</h4>
+    
+
+    <div class="contact-box">
+      
+      <div class="picture">
+        <img src="img/github-mark-white.png" alt="">
+      </div>
+      
+      <p>Vitaly Blotski</p>
+  
+      <div class="img-links">
+        
+        <div class="gitHub-link">
+          <a href="https://github.com/Blotski">
+            <img id="gitHub-link-img" src="img/github-mark-white.png" alt="">
+          </a>
+        </div>
+        
+        <div class="linkedIn-link">
+          <a href="https://www.linkedin.com/in/vitaly-blotski/">
+            <img id="linkedIn-link-img" src="img/github-mark-white.png" alt="">
+          </a>
+        </div>
+  
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <div class="icons">
+    <a href="#"><i class="ri-linkedin-fill"></i></a>
+    <a href="#"><i class="ri-medium-line"></i></a>
+  </div>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
