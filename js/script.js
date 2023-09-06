@@ -1,11 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+  const kaffeeButton = document.getElementById('kaffee-button');
   const teamButton = document.getElementById('team-button');
   const demoButton = document.getElementById('demo-button');
-  console.log(demoButton)
   const demoButton2 = document.getElementById('demo-button2');
-  console.log(demoButton2);
   const dockerButton = document.getElementById('docker-button');
+
+  
   dockerButton.addEventListener('click', function (e) {
     e.preventDefault();
 
@@ -16,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
     
     demoButton.addEventListener('click', function (e) {
       e.preventDefault();
-      console.log('entered')
 
       const section3 = document.getElementById('section3');
 
@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     demoButton2.addEventListener('click', function (e) {
       e.preventDefault();
-      console.log('entered')
 
       const section3 = document.getElementById('section3');
 
@@ -33,12 +32,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
     teamButton.addEventListener('click', function (e) {
       e.preventDefault();
-      console.log('entered')
 
       const section4 = document.getElementById('section4');
 
       section4.scrollIntoView({ behavior: 'smooth' });
     });
+  });
+
+  kaffeeButton.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const section1 = document.getElementById('section1');
+
+    section1.scrollIntoView({ behavior: 'smooth' });
   });
 
 
