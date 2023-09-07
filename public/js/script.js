@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const kaffeeButton = document.getElementById('kaffee-button');
   const teamButton = document.getElementById('team-button');
+  const teamButton2 = document.getElementById('team-button2')
   const demoButton = document.getElementById('demo-button');
   const demoButton2 = document.getElementById('demo-button2');
   const dockerButton = document.getElementById('docker-button');
@@ -32,6 +33,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     teamButton.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const contact = document.getElementById('contact');
+
+      contact.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    teamButton2.addEventListener('click', function (e) {
       e.preventDefault();
 
       const contact = document.getElementById('contact');
