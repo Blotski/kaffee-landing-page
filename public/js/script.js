@@ -1,44 +1,61 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+  const kaffeeButton = document.getElementById('kaffee-button');
   const teamButton = document.getElementById('team-button');
+  const teamButton2 = document.getElementById('team-button2')
   const demoButton = document.getElementById('demo-button');
-  console.log(demoButton)
   const demoButton2 = document.getElementById('demo-button2');
-  console.log(demoButton2);
   const dockerButton = document.getElementById('docker-button');
+
+  
   dockerButton.addEventListener('click', function (e) {
     e.preventDefault();
 
-    const section2 = document.getElementById('section2');
+    const docker = document.getElementById('docker');
 
-    section2.scrollIntoView({ behavior: 'smooth' });
-
+    docker.scrollIntoView({ behavior: 'smooth' });
+  });
     
     demoButton.addEventListener('click', function (e) {
       e.preventDefault();
-      console.log('entered')
-
-      const section3 = document.getElementById('section3');
-
-      section3.scrollIntoView({ behavior: 'smooth' });
+  
+      const demo = document.getElementById('demo');
+  
+      demo.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
     });
+
     demoButton2.addEventListener('click', function (e) {
       e.preventDefault();
-      console.log('entered')
 
-      const section3 = document.getElementById('section3');
+      const demo = document.getElementById('demo');
 
-      section3.scrollIntoView({ behavior: 'smooth' });
+      demo.scrollIntoView({ behavior: 'smooth' });
     });
 
     teamButton.addEventListener('click', function (e) {
       e.preventDefault();
-      console.log('entered')
 
-      const section4 = document.getElementById('section4');
+      const contact = document.getElementById('contact');
 
-      section4.scrollIntoView({ behavior: 'smooth' });
+      contact.scrollIntoView({ behavior: 'smooth' });
     });
+
+    teamButton2.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const contact = document.getElementById('contact');
+
+      contact.scrollIntoView({ behavior: 'smooth' });
+    });
+
+
+
+  kaffeeButton.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const main = document.getElementById('main');
+
+    main.scrollIntoView({ behavior: 'smooth' });
   });
 
 
