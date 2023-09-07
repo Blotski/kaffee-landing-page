@@ -377,3 +377,8 @@ div .img-links {
   color: white ;
 }
 
+.demo-vid {
+  width: 50vw;
+  border-radius: 10px;
+  margin-right: 10vh;
+}

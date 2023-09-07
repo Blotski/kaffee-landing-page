@@ -17,11 +17,11 @@ document.addEventListener("DOMContentLoaded", function () {
     
     demoButton.addEventListener('click', function (e) {
       e.preventDefault();
-
+  
       const section3 = document.getElementById('section3');
-
-      section3.scrollIntoView({ behavior: 'smooth' });
-    });
+  
+      section3.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+  });
     demoButton2.addEventListener('click', function (e) {
       e.preventDefault();
 
