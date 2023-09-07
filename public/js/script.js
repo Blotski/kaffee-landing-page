@@ -10,41 +10,43 @@ document.addEventListener("DOMContentLoaded", function () {
   dockerButton.addEventListener('click', function (e) {
     e.preventDefault();
 
-    const section2 = document.getElementById('section2');
+    const docker = document.getElementById('docker');
 
-    section2.scrollIntoView({ behavior: 'smooth' });
-
+    docker.scrollIntoView({ behavior: 'smooth' });
+  });
     
     demoButton.addEventListener('click', function (e) {
       e.preventDefault();
   
-      const section3 = document.getElementById('section3');
+      const demo = document.getElementById('demo');
   
-      section3.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
-  });
+      demo.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+    });
+
     demoButton2.addEventListener('click', function (e) {
       e.preventDefault();
 
-      const section3 = document.getElementById('section3');
+      const demo = document.getElementById('demo');
 
-      section3.scrollIntoView({ behavior: 'smooth' });
+      demo.scrollIntoView({ behavior: 'smooth' });
     });
 
     teamButton.addEventListener('click', function (e) {
       e.preventDefault();
 
-      const section4 = document.getElementById('section4');
+      const contact = document.getElementById('contact');
 
-      section4.scrollIntoView({ behavior: 'smooth' });
+      contact.scrollIntoView({ behavior: 'smooth' });
     });
-  });
+
+
 
   kaffeeButton.addEventListener('click', function (e) {
     e.preventDefault();
 
-    const section1 = document.getElementById('section1');
+    const main = document.getElementById('main');
 
-    section1.scrollIntoView({ behavior: 'smooth' });
+    main.scrollIntoView({ behavior: 'smooth' });
   });
 
 

@@ -24,9 +24,9 @@
 
 <body>
   <header>
-    <a id='kaffee-button' href="#" class="logo">KAFFEE</a>
+    <a id='kaffee-button' href="#main" class="logo">KAFFEE</a>
     <ul class="navlist">
-      <li><a href="#">Contact</a></li>
+      <li><a id="team-button" href="#contact">Contact</a></li>
       <li>
         <a target="_blank" href="https://github.com/oslabs-beta/Kaffee">
           <img id="navlist-github" src="img/github-mark-white.png" alt="">
@@ -36,13 +36,13 @@
     <div class="bx bx-menu" id="menu-icon"></div>
   </header>
 
-  <section class="hero" id="section1">
+  <section class="hero" id="main">
     <div class="hero-text">
       <h4>Kaffee</h4>
       <h1>JMX Client for Kafka</h1>
       <p>Easily monitor and record Kafka cluster metrics through the power of Java Management Extensions</p>
-      <a id='docker-button' href="#">Docker</a>
-      <a id='demo-button' href="#" class="ctaa"><i class="ri-play-fill"></i>See Demo</a>
+      <a id='docker-button' href="#docker">Docker</a>
+      <a id='demo-button' href="#demo" class="ctaa"><i class="ri-play-fill"></i>See Demo</a>
 
     </div>
     <div class="hero-img">
@@ -51,11 +51,11 @@
 
   </section>
 
-  <section class="hero" id="section2">
+  <section class="hero" id="docker">
     <div class="hero-text">
       <h4>Install</h4>
       <h3>Simply copy and paste this code into the services dictionary in your compose.yml file.</h3>
-      <a id='demo-button2' href="#" class="ctaa demo-button"><i class="ri-play-fill"></i>See Demo</a>
+      <a id='demo-button2' href="#demo" class="ctaa demo-button"><i class="ri-play-fill"></i>See Demo</a>
 
     </div>
     <div class="hero-img">
@@ -73,9 +73,9 @@
 
   </section>
 
-  <section class="hero" id="section3">
+  <section class="hero" id="demo">
     <div class="hero-img">
-      <video class="demo-vid" loop>
+      <video class="demo-vid" loop controls>
         <source src="img/kaffee-demo-vid.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
@@ -91,7 +91,7 @@
       }
 
       const options = {
-          threshold: 0.5
+          threshold: 0.2
       };
 
       const videoElement = document.querySelector(".demo-vid");
@@ -103,7 +103,7 @@
     <div class="hero-text">
       <h1>Kaffee In Action</h1>
       <p>Kaffee provides real-time metrics to monitor your Kafka data streams.</p>
-      <a id='team-button' href="#">See the team</a>
+      <a id='team-button' href="#contact">See the team</a>
     </div>
 
 
@@ -111,7 +111,7 @@
 
 
   <!-- Contact Section -->
-  <section id="section4">
+  <section id="contact">
 
     <h4 id="contact-us">Contact Us</h4>
 
