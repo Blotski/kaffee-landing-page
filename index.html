@@ -75,9 +75,30 @@
 
   <section class="hero" id="section3">
     <div class="hero-img">
-      <iframe src="https://giphy.com/embed/3o6gE51uXycrKW6D84" width="420" height="480" frameBorder="0"
-        class="giphy-embed" allowFullScreen></iframe>
-      <p><a href="https://giphy.com/gifs/jonny-magic-hot-dog-3o6gE51uXycrKW6D84"></a></p>
+      <video class="demo-vid" loop>
+        <source src="img/kaffee-demo-vid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <script>
+      function handleIntersection(entries, observer) {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  const video = entry.target;
+                  video.play();
+                  observer.unobserve(video);
+              }
+          });
+      }
+
+      const options = {
+          threshold: 0.5
+      };
+
+      const videoElement = document.querySelector(".demo-vid");
+      const observer = new IntersectionObserver(handleIntersection, options);
+
+      observer.observe(videoElement);
+  </script>
     </div>
     <div class="hero-text">
       <h1>Kaffee In Action</h1>
